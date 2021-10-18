@@ -1,0 +1,876 @@
+﻿{% load static %}
+{% static "img" as baseUrl %}
+<!DOCTYPE html>
+<!-- saved from url=(0070)file:///C:/Users/Fahad%20Syed/Desktop/app-master/app-master/index.html -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>SM ESTATE & </title>
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href={% static './index_files/bootstrap.css' %}>
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href={% static './index_files/owl.carousel.css' %}>
+    <link rel="stylesheet" href={% static './index_files/owl.theme.default.min.css'>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href={% static './index_files/animate.css' %}>
+    <link rel="stylesheet" type="text/css" href={% static 'styles/about.css' %}>
+    <link rel="stylesheet" type="text/css" href={% static 'styles/about_responsive.css' %}>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href={% static './index_files/all.css' %} integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src={% static './index_files/jquery.min.js.download' %}></script>
+    <script src={% static './index_files/bootstrap.js.download' %}></script>
+    <script src={% static './index_files/owl.carousel.js.download' %}></script>
+    <script src={% static './index_files/wow.min.js.download' %}></script>
+    <script src={% static './index_files/main.js.download' %}></script>
+    <!-- Theme style  -->
+    <link rel="stylesheet" href={% static './index_files/style.css' %}>
+    <style>
+             /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        .d4 {
+            width: auto;
+            height: 600px;
+            background-color: white;
+        }
+        /* The dots/bullets/indicators
+        .dot {
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.1s ease;
+        }*/
+
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 2s;
+            animation-name: fade;
+            animation-duration: 2s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+        .slider {
+  max-width: 490px;
+  height: 320px;
+  margin: 20px auto;
+  position: relative;
+}
+.slide1,.slide2,.slide3,.slide4,.slide5,.slide6,.slide7,.slide8 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slide1 {
+  no-repeat center;
+      background-size:cover;
+    animation:fade 30s infinite;
+-webkit-animation:fade 30s infinite;
+
+}
+        .slide2 {
+            no-repeat center;
+            background-size: cover;
+            animation: fade2 30s infinite;
+            -webkit-animation: fade2 30s infinite;
+        }
+
+        .slide3 {
+            no-repeat center;
+            background-size: cover;
+            animation: fade3 30s infinite;
+            -webkit-animation: fade3 30s infinite;
+        }
+
+        .slide4 {
+            no-repeat center;
+            background-size: cover;
+            animation: fade4 30s infinite;
+            -webkit-animation: fade4 30s infinite;
+        }
+
+        .slide5 {
+            no-repeat center;
+            background-size: cover;
+            animation: fade5 30s infinite;
+            -webkit-animation: fade5 30s infinite;
+        }
+
+        .slide6 {
+            no-repeat center;
+            background-size: cover;
+            animation: fade6 30s infinite;
+            -webkit-animation: fade6 30s infinite;
+        }
+
+        .slide7 {
+            no-repeat center;
+            background-size: cover;
+            animation: fade7 30s infinite;
+            -webkit-animation: fade7 30s infinite;
+        }
+
+        .slide8 {
+            no-repeat center;
+            background-size: cover;
+            animation: fade8 30s infinite;
+            -webkit-animation: fade8 30s infinite;
+        }
+
+        @keyframes fade {
+            0% {
+                opacity: 1
+            }
+
+            12.5% {
+                opacity: 0
+            }
+
+            25% {
+                opacity: 0
+            }
+
+            37.5% {
+                opacity: 0
+            }
+
+            50% {
+                opacity: 0
+            }
+
+            62.5% {
+                opacity: 0
+            }
+
+            75.5% {
+                opacity: 0
+            }
+
+            87.5% {
+                opacity: 0
+            }
+
+            100% {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade2 {
+            0% {
+                opacity: 0
+            }
+
+            12.5% {
+                opacity: 1
+            }
+
+            25% {
+                opacity: 0
+            }
+
+            37.5% {
+                opacity: 0
+            }
+
+            50% {
+                opacity: 0
+            }
+
+            62.5% {
+                opacity: 0
+            }
+
+            75.5% {
+                opacity: 0
+            }
+
+            87.5% {
+                opacity: 0
+            }
+
+            100% {
+                opacity: 0
+            }
+        }
+
+        @keyframes fade3 {
+            0% {
+                opacity: 0
+            }
+
+            12.5% {
+                opacity: 0
+            }
+
+            25% {
+                opacity: 1
+            }
+
+            37.5% {
+                opacity: 0
+            }
+
+            50% {
+                opacity: 0
+            }
+
+            62.5% {
+                opacity: 0
+            }
+
+            75.5% {
+                opacity: 0
+            }
+
+            87.5% {
+                opacity: 0
+            }
+
+            100% {
+                opacity: 0
+            }
+        }
+
+        @keyframes fade4 {
+            0% {
+                opacity: 0
+            }
+
+            12.5% {
+                opacity: 0
+            }
+
+            25% {
+                opacity: 0
+            }
+
+            37.5% {
+                opacity: 1
+            }
+
+            50% {
+                opacity: 0
+            }
+
+            62.5% {
+                opacity: 0
+            }
+
+            75.5% {
+                opacity: 0
+            }
+
+            87.5% {
+                opacity: 0
+            }
+
+            100% {
+                opacity: 0
+            }
+        }
+
+        @keyframes fade5 {
+            0% {
+                opacity: 0
+            }
+
+            12.5% {
+                opacity: 0
+            }
+
+            25% {
+                opacity: 0
+            }
+
+            37.5% {
+                opacity: 0
+            }
+
+            50% {
+                opacity: 1
+            }
+
+            62.5% {
+                opacity: 0
+            }
+
+            75.5% {
+                opacity: 0
+            }
+
+            87.5% {
+                opacity: 0
+            }
+
+            100% {
+                opacity: 0
+            }
+        }
+
+        @keyframes fade6 {
+            0% {
+                opacity: 0
+            }
+
+            12.5% {
+                opacity: 0
+            }
+
+            25% {
+                opacity: 0
+            }
+
+            37.5% {
+                opacity: 0
+            }
+
+            50% {
+                opacity: 0
+            }
+
+            62.5% {
+                opacity: 1
+            }
+
+            75.5% {
+                opacity: 0
+            }
+
+            87.5% {
+                opacity: 0
+            }
+
+            100% {
+                opacity: 0
+            }
+        }
+
+        @keyframes fade7 {
+            0% {
+                opacity: 0
+            }
+
+            12.5% {
+                opacity: 0
+            }
+
+            25% {
+                opacity: 0
+            }
+
+            37.5% {
+                opacity: 0
+            }
+
+            50% {
+                opacity: 0
+            }
+
+            62.5% {
+                opacity: 0
+            }
+
+            75.5% {
+                opacity: 1
+            }
+
+            87.5% {
+                opacity: 0
+            }
+
+            100% {
+                opacity: 0
+            }
+        }
+
+        @keyframes fade8 {
+            0% {
+                opacity: 0
+            }
+
+            12.5% {
+                opacity: 0
+            }
+
+            25% {
+                opacity: 0
+            }
+
+            37.5% {
+                opacity: 0
+            }
+
+            50% {
+                opacity: 0
+            }
+
+            62.5% {
+                opacity: 0
+            }
+
+            75.5% {
+                opacity: 0
+            }
+
+            87.5% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 0
+            }
+        }
+
+       
+
+        /*Header*/
+        h1,
+        h2 {
+            text-shadow: none;
+            text-align: center;
+        }
+
+        h1 {
+            color: #666;
+            text-transform: uppercase;
+            font-size: 36px;
+        }
+
+        h2 {
+            color: #7f8c8d;
+            font-family: Neucha, Arial, sans serif;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        /*ANIMATION*/
+        #slider-wrap ul,
+        #pagination-wrap ul li {
+            -webkit-transition: all 0.3s cubic-bezier(1, 0.01, 0.32, 1);
+            -moz-transition: all 0.3s cubic-bezier(1, 0.01, 0.32, 1);
+            -o-transition: all 0.3s cubic-bezier(1, 0.01, 0.32, 1);
+            -ms-transition: all 0.3s cubic-bezier(1, 0.01, 0.32, 1);
+            transition: all 0.3s cubic-bezier(1, 0.01, 0.32, 1);
+        }
+
+
+
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
+
+        .s2 {
+            font-size: 2em;
+            font-family: "Adobe Garamond Pro", serif, "Adobe Caslon Pro";
+        }
+
+        .col-sm-7 {
+            font: Tahoma, Geneva, sans-serif;
+            color: #FFF;
+        }
+
+        #fh5co-hero-wrapper {
+            background-size: cover;
+            background-image: url({% static 'img/mainupdated.png' %});
+        height: 800px;
+        width:100%;
+        }
+
+        /*---------------------*/
+        .textOverImage {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            float: left;
+            margin: 4px;
+            background-size: 100%;
+            background-position: center;
+            transition: 0.5s;
+        }
+
+            .textOverImage:hover {
+                background-size: 110%;
+            }
+
+            .textOverImage:after {
+                position: absolute;
+                top: 90%;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                white-space: pre-wrap;
+                overflow: hidden;
+                background-color: rgba(0,0,0,0.3);
+                color: #fff;
+                padding: 0 8px;
+                content: attr(data-text);
+                transition: 0.5s;
+            }
+
+            .textOverImage:hover:after {
+                top: 0;
+                padding: 8px;
+                background-color: rgba(0,0,0,0.6);
+            }
+
+            .textOverImage:first-line {
+                color: #fff;
+                font-weight: bold;
+                font-size: 1.5em;
+            }
+
+        .boxe {
+            padding-left: 0px;
+        }
+
+        .imagebox {
+            margin-left: 80px;
+            height: auto;
+            width: auto;
+            padding: 20px 20px 20px 20px;
+        }
+        
+
+                .inner {
+                }
+
+                .btn1 {
+                    position: center;
+                    height: 100px;
+                    width: 150px;
+                    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+                    background-color:goldenrod; 
+                    }
+                /*.text{
+            font-size:medium;
+            cursor:all-scroll;
+            height:500px;
+        }*/
+                .site-footer {
+                }
+    </style>
+</head>
+<body>
+
+
+    <div id="page-wrap">
+
+
+        <!-- ==========================================================================================================
+                                                  HERO
+    ========================================================================================================== -->
+
+        <div id="fh5co-hero-wrapper">
+            <br />
+            <br />
+            <nav class="container navbar navbar-expand-lg main-navbar-nav navbar-light">
+                <a class="navbar-brand"><img src={% static 'img/pp1.jpg' %} alt="logo" style="width:157px;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-items-center ml-auto mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about/about" onclick="$(&#39;#fh5co-features&#39;).goTo();return false;">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact/contact" onclick="$(&#39;#fh5co-download&#39;).goTo();return false;">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login/login" onclick="$(&#39;#fh5co-download&#39;).goTo();return false;">login</a>
+                        </li>
+                    </ul>
+                    <div class="social-icons-header">
+                        <a href="https://www.facebook.com"><img src={% static 'img/ff.png' %} style="width:37px;"></a>
+                        <a href="https://www.instagram.com"><img src={% static 'img/ins.png' %} style="width:37px;"></a>
+                        <a href="https://www.twitter.com/fh5co"><img src={% static 'img/tw.png' %} style="width:37px;"></a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container fh5co-hero-inner">
+                <h1 class="fadeIn wow   animated" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; text-shadow: #f8f9fa 0px -1px 11px; margin-right:320px;">SM Estate & Marketing </h1>
+                <h2 class="fadeIn wow   animated" data-wow-delay="0.67s" style="visibility: visible; animation-delay: 0.67s; text-shadow: #f8f9fa 0px -1px 11px; color : white; margin-right:800px; font-size: 1.5em;">
+
+                    So Finally The Wait Is Over!!!
+
+                </h2>
+                <h2 class="fadeIn wow   animated" data-wow-delay="0.67s" style="visibility: visible; animation-delay: 0.67s; text-shadow: #f8f9fa 0px -1px 11px; color : white; margin-right:900px;">We Are Here For You</h2>
+
+                <div>
+                    <img class="fh5co-hero-smartphone  fadeInRight wow   animated" data-wow-delay="1s" src={% static 'img/w2.jpg' %} alt="Smartphone"
+                         style="visibility: visible; animation-delay: 1s; width:750px; height: 300px;">
+
+                </div>
+            </div>
+
+
+        </div> <!-- first section wrapper -->
+        <!-- ==========================================================================================================
+                                                ADVANTAGES
+    ========================================================================================================== -->
+        <div class="fh5co-advantages-outer">
+            <div class="container">
+                <h1 class="second-title" style="color:goldenrod;"><span class="span-perfect" style="color:black;">Make a perfect</span> <span class="span-features"> Choice</span></h1>
+                <small>Perfect House & Flats are Availabe Here</small>
+                <div class="row fh5co-advantages-grid-columns wow animated fadeIn" data-wow-delay="0.36s" style="visibility: hidden; animation-delay: 0.36s; animation-name: none;">
+                    <div class="col-sm-4">
+                        <img class="grid-image" src={% static 'img/img1.jpg' %} alt="Icon-1" width="120%" height="105">
+                        <h1 class="grid-title">House </h1>
+                        <p class="grid-desc">We Provide Best Decoration in low Price and We decorate House on customer demand .</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img class="grid-image" src={% static 'img/food.jpg' %} alt="Icon-2" width="120%" height="105">
+                        <h1 class="grid-title">Flats </h1>
+                        <p class="grid-desc">We provide best Flats. And also take feedback from customers about our services..</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src={% static 'img/plots.jpg' %} alt="Icon-3" width="120%" height="105" class="grid-image">
+                        <h1 class="grid-title">Plots </h1>
+                        <p class="grid-desc">We provide perfect plots with sound amount of investment .</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- ==========================================================================================================
+                                                 SLIDER
+    ========================================================================================================== -->
+        <!--<div class="fh5co-slider-outer wow fadeIn" data-wow-delay="0.36s" style="visibility: hidden; animation-delay: 0.36s; animation-name: none;">-->
+        <h1 style="color:goldenrod;">Available Flats, Houses and Plots</h1>
+
+        {% for de in destt %}
+       
+         <div class="parent">
+             <div class="d4">
+                 <div class='slider'>
+                     <div class='slide1'><img src={{de.img1.url}} style="width:490px; height:320px"></div>
+                     <div class='slide2'><img src={{de.img2.url}} style="width:490px; height:320px"></div>
+                     <div class='slide3'><img src={{de.img3.url}} style="width:490px; height:320px"></div>
+                     <div class='slide4'><img src={{de.img4.url}} style="width:490px; height:320px"></div>
+                     <div class='slide5'><img src={{de.img5.url}} style="width:490px; height:320px"></div>
+                     <div class='slide6'><img src={{de.img6.url}} style="width:490px; height:320px"></div>
+                     <div class='slide7'><img src={{de.img7.url}} style="width:490px; height:320px"></div>
+                     <div class='slide8'><img src={{de.img8.url}} style="width:490px; height:320px"></div>
+                 </div>
+                 <br />
+                 <br />
+
+
+
+
+
+                 <h1 style="color:goldenrod;">{{de.name}}</h1>
+                 <p style="text-align:center; color:black;">{{de.desc}}</p>
+
+
+             </div>
+
+
+    
+
+     <!-- ==========================================================================================================
+                                                      HEADING
+     ========================================================================================================== -->
+        <!--   -->
+        <!-- Milestones -->
+
+    <br/>
+        
+         <div class="container">
+            <div class="row">
+
+                <div class="milestones">
+                    <!-- Milestone -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 milestone_col custom-float">
+                        <div class="milestone text-center">
+                            <div class="milestone_icon"><img src={% static 'img/down.png' %} alt=""></div>
+                            <div class="milestone_counter" data-end-value="{{de.bed}}" style="color:goldenrod;">0</div>
+                            <div class="milestone_text">Bed Rooms</div>
+                        </div>
+                    </div>
+                    {% if de.sqfeet %}
+                    <!-- Milestone -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 milestone_col custom-float">
+                        <div class="milestone text-center">
+                            <div class="milestone_icon"><img src={% static 'img/d12.png' %} alt=""></div>
+                            <div class="milestone_counter" data-end-value="{{de.sf}}" style="color:goldenrod;">0</div>
+                            <div class="milestone_text">Square Feet</div>
+                        </div>
+                    </div>
+
+                    {% elif de.sqyard %}
+                    <!-- Milestone -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 milestone_col custom-float">
+                        <div class="milestone text-center">
+                            <div class="milestone_icon"><img src={% static 'img/d12.png' %} alt=""></div>
+                            <div class="milestone_counter" data-end-value="{{de.sf}}" style="color:goldenrod;">0</div>
+                            <div class="milestone_text">Square Yards</div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    <!-- Milestone -->
+                    <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 milestone_col custom-float">
+                        <div class="milestone text-center">
+                            <div class="milestone_icon"><img src={% static 'img/do.png' %} alt=""></div>
+                            <div class="milestone_counter" data-end-value="{{de.ter}}" style="color:goldenrod;">0</div>
+                            <div class="milestone_text">Terrace</div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+        <br />
+        <br />
+
+    </div>
+            {% endfor %}
+
+   
+        </div>
+
+
+
+
+
+
+        <!-- ==========================================================================================================
+                                                   SECTION 7 - SUB FOOTER
+        ========================================================================================================== -->
+        <!-- Footer -->
+
+
+
+        <footer class="footer">
+            <div class="parallax_background parallax-window" data-parallax="scroll" data-image-src={% static 'img/hh122.jpg' %} data-speed="0.8"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+
+                    </div>
+                </div>
+                <div class="row footer_contact_row">
+                    <div class="col-xl-10 offset-xl-1">
+                        <div class="row">
+
+                            <!-- Footer Contact Item -->
+                            <div class="col-xl-4 footer_contact_col">
+                                <div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
+                                    <div class="footer_contact_icon"><img src={% static 'images/sign.svg' %} alt=""></div>
+                                    <div class="footer_contact_title" style="color:goldenrod;">give us a call</div>
+                                    <div class="footer_contact_list">
+                                        <ul>
+                                            <li>Office Landline: 021-2346578</li>
+                                            <li>Mobile: 0332-3507737</li>
+                                            <li>Mobile: 0331-3710293</li>
+                                            <li>Mobile: 0333-3303281</li>
+                                            <li>Whatsapp: 0314-2130341</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Footer Contact Item -->
+                            <div class="col-xl-4 footer_contact_col">
+                                <div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
+                                    <div class="footer_contact_icon"><img src={% static 'images/trekking.svg' %} alt=""></div>
+                                    <div class="footer_contact_title" style="color:goldenrod;">ADDRESS</div>
+                                    <div class="footer_contact_list">
+                                        <ul style="max-width:190px">
+                                            <li>Suit # 1205 12th floor Sohni Golf View, Jinnah Avenue, Malir Cantt, Karachi  </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Footer Contact Item -->
+                            <div class="col-xl-4 footer_contact_col">
+                                <div class="footer_contact_item d-flex flex-column align-items-center justify-content-start text-center">
+                                    <div class="footer_contact_icon"><img src={% static 'images/around.svg' %} alt=""></div>
+                                    <div class="footer_contact_title" style="color:goldenrod;">send us a message</div>
+                                    <div class="footer_contact_list">
+                                        <ul>
+                                            <li>smem.2017@gmail.com</li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <script src={% static 'js/jquery-3.2.1.min.js' %}></script>
+        <script src={% static 'styles/bootstrap4/popper.js' %}></script>
+        <script src={% static 'styles/bootstrap4/bootstrap.min.js' %}></script>
+        <script src={% static 'plugins/greensock/TweenMax.min.js' %}></script>
+        <script src={% static 'plugins/greensock/TimelineMax.min.js' %}></script>
+        <script src={% static 'plugins/scrollmagic/ScrollMagic.min.js' %}></script>
+        <script src={% static 'plugins/greensock/animation.gsap.min.js' %}></script>
+        <script src={% static 'plugins/greensock/ScrollToPlugin.min.js' %}></script>
+        <script src={% static 'plugins/OwlCarousel2-2.2.1/owl.carousel.js' %}></script>
+        <script src={% static 'plugins/easing/easing.js' %}></script>
+        <script src={% static 'plugins/parallax-js-master/parallax.min.js' %}></script>
+        <script src={% static 'js/about.js' %}></script>
+    </div> <!-- main page wrapper -->
+   
+    <script src={% static './index_files/jquery.min.js.download' %}></script>
+    <script src={% static './index_files/bootstrap.js.download' %}></script>
+    <script src={% static './index_files/owl.carousel.js.download' %}></script>
+    <script src={% static './index_files/wow.min.js.download' %}></script>
+    <script src={% static './index_files/main.js.download' %}></script>
+    <script src={% static 'js/jquery-3.2.0.min.js' %}></script>
+    <script src={% static 'js/TweenLite.min.js' %}></script>
+    <script src={% static 'js/CSSPlugin.min.js' %}></script>
+
+    <script src={% static 'build/app.js' %}></script>
+
+
+
+
+
+
+</body>
+</html>

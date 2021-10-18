@@ -1,0 +1,369 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/******************************
+
+[Table of Contents]
+
+1. Fonts
+2. Body and some general stuff
+3. Header
+4. Menu
+5. Home
+6. Home Search
+7. About
+8. Milestones
+9. Why choose us
+10. Team
+11. Footer
+
+
+******************************/
+
+/***********
+1. Fonts
+***********/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Oswald:400,500,600,700');
+
+/*********************************
+2. Body and some general stuff
+*********************************/
+
+*{
+
+margin: 0;
+padding: 0;
+-webkit-font-smoothing: antialiased;
+-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	background: #FFFFFF;
+	color: #a5a5a5;
+}
+
+
+
+.prlx_parent {
+	overflow: hidden;
+}
+
+.prlx {
+	height: 130% !important;
+}
+
+.parallax-window 
+{
+
+	min-height: 400px;
+	background: transparent;
+}
+
+.parallax_background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+/*********************************
+8. Milestones
+*********************************/
+
+.milestones {
+	width: 100% !important;
+	background: #FFFFFF;
+	
+	
+}
+,milestones1{
+	width:100px;
+}
+.milestone {
+	width: 100%;
+}
+
+.milestone_icon {
+	display: inline-block;
+	height: 82px;
+	width: 82px;
+}
+
+	.milestone_icon img {
+		max-width: 100%;
+	}
+
+.milestone_counter {
+	font-family: 'Oswald', sans-serif;
+	font-size: 60px;
+	font-weight: 500;
+	color: #181818;
+	line-height: 0.75;
+	margin-top: 35px;
+}
+
+.milestone_text {
+	font-family: 'Oswald', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	color: #838383;
+	margin-top: 31px;
+	line-height: 0.75;
+}
+/********************************
+10. Team
+*********************************/
+
+.team {
+	width: 100%;
+	background: #FFFFFF;
+	padding-top: 115px;
+	padding-bottom: 67px;
+}
+
+.team_row {
+	margin-top: 100px;
+}
+
+.team_item {
+	width: 100%;
+	padding-bottom: 48px;
+}
+
+.team_image {
+	width: 195px;
+	height: 195px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+	.team_image img {
+		max-width: 100%;
+	}
+
+.team_content {
+	width: 100%;
+}
+
+.team_title {
+	margin-top: 37px;
+}
+
+	.team_title a {
+		font-family: 'Oswald', sans-serif;
+		font-size: 24px;
+		font-weight: 400;
+		color: rgba(24,24,24,1);
+		line-height: 1.2;
+		-webkit-transition: all 200ms ease;
+		-moz-transition: all 200ms ease;
+		-ms-transition: all 200ms ease;
+		-o-transition: all 200ms ease;
+		transition: all 200ms ease;
+	}
+
+		.team_title a:hover {
+			color: rgba(24,24,24,0.7);
+		}
+
+.team_text {
+	margin-top: 22px;
+}
+
+
+	
+
+
+
+
+
+
+/*********************************
+11. Footer
+*********************************/
+
+.footer
+{
+	
+	position: relative;
+	display: block;
+	padding-top: 136px;
+	padding-bottom:100px;
+}
+.newsletter_title
+{
+	font-family: 'Oswald', sans-serif;
+	font-size: 36px;
+	font-weight: 400;
+	color: #FFFFFF;
+	line-height: 1.2;
+}
+.newsletter_subtitle
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	color: #FFFFFF;
+	font-weight: 300;
+	margin-top: 18px;
+}
+.newsletter_form_container
+{
+	margin-top: 84px;
+}
+.newsletter_input
+{
+	width: 100%;
+	height: 50px;
+	background: rgba(255,255,255,0.5);
+	border: none;
+	outline: none;
+	padding-left: 22px;
+	color: #FFFFFF;
+}
+.newsletter_input::-webkit-input-placeholder
+{
+	font-size: 12px !important;
+	font-weight: 400 !important;
+	font-style: italic;
+	color: #FFFFFF !important;
+}
+.newsletter_input:-moz-placeholder
+{
+	font-size: 12px !important;
+	font-weight: 400 !important;
+	font-style: italic;
+	color: #FFFFFF !important;
+}
+.newsletter_input::-moz-placeholder
+{
+	font-size: 12px !important;
+	font-weight: 400 !important;
+	font-style: italic;
+	color: #FFFFFF !important;
+} 
+.newsletter_input:-ms-input-placeholder
+{ 
+	font-size: 12px !important;
+	font-weight: 400 !important;
+	font-style: italic;
+	color: #FFFFFF !important;
+}
+.newsletter_input::input-placeholder
+{
+	font-size: 12px !important;
+	font-weight: 400 !important;
+	font-style: italic;
+	color: #FFFFFF !important;
+}
+.newsletter_form > div:not(:last-child)
+{
+	margin-right: 15px;
+}
+.newsletter_form > div:first-child
+{
+	width: calc(100% - 176px);
+}
+.newsletter_form > div:first-child > div:first-child
+{
+	width: calc((100% - 15px) * 0.35);
+}
+.newsletter_form > div:first-child > div:last-child
+{
+	width: calc((100% - 15px) * 0.65);
+}
+.newsletter_form > div > div > div
+{
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	width: 100%;
+	height: 2px;
+	background: #FFFFFF;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.newsletter_button
+{
+	width: 161px;
+	height: 50px;
+	border-radius: 20px;
+	background: rgba(255,255,255,0.5);
+	font-family: 'Oswald', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.footer_contact_row
+{
+	margin-top: 80px;
+	padding-bottom: 50px;
+}
+.footer_contact_item
+{
+	width: 100%;
+
+}
+.footer_contact_icon
+{
+	width: 68px;
+	height: 68px;
+}
+.footer_contact_icon img
+{
+	max-width: 100%;
+}
+.cr
+{
+	width: 100%;
+	height: 68px;
+}
+.cr div
+{
+	font-size: 12px;
+	font-weight: 400;
+	color: rgba(255,255,255,0.48);
+}
+.footer_contact_title
+{
+	font-family: 'Oswald', sans-serif;
+	font-size: 24px;
+	color: #FFFFFF;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-top: 18px;
+}
+.footer_contact_list
+{
+	margin-top: 19px;
+}
+.footer_contact_list ul li
+{
+	font-size: 14px;
+	color: #FFFFFF;
+	line-height: 1.71;
+}
+.footer_contact_list ul li:not(:last-child)
+{
+	margin-bottom: 7px;
+}
+
+.custom-float {
+float:left !important;
+}
